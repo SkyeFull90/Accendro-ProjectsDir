@@ -10,19 +10,21 @@ const { data, error } = await supabase
     .order("id");
 ---
 <Layout title="dashboard">
-    <div class="hero min-h-screen" style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
+    <header>
+        <div class="hero min-h-screen" style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center text-neutral-content">
-            <div class="max-w-md lg:max-w-auto">
+            <div class="max-w-md">
                 <h1 class="mb-5 text-5xl font-bold">Welcome {email}</h1>
                 <p class="mb-5">We are happy to see you here</p>
                 <form class="btn btn-primary" action="/api/auth/signout">
                     <button type="submit">Sign out</button>
                 </form>
-                 <div class="mt-5">
-                    <SalesReportTable saleReport={data} client:idle />
-                </div>
             </div>
         </div>
     </div>
+    </header>
+   <main>
+       <SalesReportTable salesReport={data}  client:idle/>
+   </main>
 </Layout>
