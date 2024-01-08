@@ -3,9 +3,10 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main class="mt-8">
-		<svg
+<Layout title="Astro & Supabase Auth">
+	<main class="mt-5 ">
+		<div >
+			<svg
 			class="astro-a mt-12"
 			width="495"
 			height="623"
@@ -33,12 +34,67 @@ import Card from '../components/Card.astro';
 				</linearGradient>
 			</defs>
 		</svg>
+		<svg
+        		class="astro-a h-12 w-auto mt-12 mx-96"
+        		width="109"
+        		height="113"
+        		viewBox="0 0 109 113"
+        		fill="none"
+        		xmlns="http://www.w3.org/2000/svg"
+			>
+    		<path
+            	d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z"
+            	fill="url(#paint0_linear)"></path>
+    		<path
+            	d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z"
+            	fill="url(#paint1_linear)"
+            	fill-opacity="0.2"></path>
+    		<path
+            	d="M45.317 2.07103C48.1765 -1.53037 53.9745 0.442937 54.0434 5.041L54.4849 72.2922H9.83113C1.64038 72.2922 -2.92775 62.8321 2.1655 56.4175L45.317 2.07103Z"
+            	fill="#3ECF8E"></path>
+    		<defs>
+        		<linearGradient
+                	id="paint0_linear"
+                	x1="53.9738"
+                	y1="54.974"
+                	x2="94.1635"
+                	y2="71.8295"
+                	gradientUnits="userSpaceOnUse"
+        		>
+            	<stop stop-color="#249361"></stop>
+				<stop offset="1" stop-color="#3ECF8E"></stop>
+        		</linearGradient>
+        		<linearGradient
+                	id="paint1_linear"
+                	x1="36.1558"
+                	y1="30.578"
+                	x2="54.4844"
+                	y2="65.0806"
+                	gradientUnits="userSpaceOnUse"
+        		>
+            	<stop></stop>
+            	<stop offset="1" stop-opacity="0"></stop>
+        		</linearGradient>
+    		</defs>
+		</svg>
+		</div>
+
 		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+		<h3 class="text-center my-5">with <span class="text-gradient">Supabase and Supabase Auth</span></h3>
+
 		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+				Astro with Supabase Auth, powerful and robustly fast framework Astro JS meets smooth Postgres SQL firebase alternative, Supabase. Brings all the compatibilities of the
+				other large frameworks such as RedWoodJS, Next, Nuxt, and Vite (which astro js is built upon).  And allows the developer to build and load what js they want.
+				In this demo, We show off all the wonderful ssr and data fetching compatibilities that Astro can offer and it is lighting fast, leaving Next JS in the dust. And with supabase auth, all we
+				need is a connection string or our url and anon api key from supabase and writing a we bit of api routing and the auth forms and a small landing dashboard  and bam you got a
+				nice fast way to build a smooth login interface. And with less stress and also faster page loads to. Below are some Nice features Astro has to offer.
 		</p>
 		<ul role="list" class="link-card-grid">
+			<Card
+				href="https://astro.build"
+				title="Astro"
+				body="Astro Js a fast web Framework that helps devs build the web faster and easier."
+			/>
 			<Card
 				href="https://docs.astro.build/"
 				title="Documentation"
@@ -50,6 +106,11 @@ import Card from '../components/Card.astro';
 				body="Supercharge your project with new frameworks and libraries."
 			/>
 			<Card
+				href="https://docs.astro.build/en/guides/backend/"
+				title="Add backend services"
+				body="Use a backend service with Astro Ready to add features like authentication, storage or data to your Astro project? Follow one of our guides to integrate a backend service."
+			/>
+			<Card
 				href="https://astro.build/themes/"
 				title="Themes"
 				body="Explore a galaxy of community-built starter themes."
@@ -58,6 +119,11 @@ import Card from '../components/Card.astro';
 				href="https://astro.build/chat/"
 				title="Community"
 				body="Come say hi to our amazing Discord community. ❤️"
+			/>
+			<Card
+				href="https://docs.astro.build/en/guides/backend/supabase/"
+				title="Supabase and Astro Docs"
+				body="Supabase is an open source Firebase alternative. It provides a Postgres database, authentication, edge functions, realtime subscriptions, and storage."
 			/>
 		</ul>
 	</main>
@@ -76,7 +142,7 @@ import Card from '../components/Card.astro';
 	.astro-a {
 		position: absolute;
 		top: -32px;
-		left: 50%;
+		left:  38%;
 		transform: translatex(-50%);
 		width: 220px;
 		height: auto;

@@ -13,9 +13,9 @@ const SalesReport = () => {
     }, []);
 
     return (
-        <div className={'m-6'}>
+        <div className={'m-3'}>
             <h1 className={'text-3xl mb-5 text-center'}>Sales Report</h1>
-            <table className={"table-auto"}>
+            <table className={"table table-auto"}>
                 <thead>
                     <tr>
                         <th className={"text-2xl"}>Model Type</th>
